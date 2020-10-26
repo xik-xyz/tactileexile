@@ -26,8 +26,6 @@ createCanvas(windowWidth, windowHeight);
 v1.loop();
 v1.volume(0.2);
 
-
-
   v2 = createVideo("002.mp4");
   v2.size(width/2, height/2); 
   v60 = createVideo("060.mp4");
@@ -54,6 +52,7 @@ v1.volume(0.2);
   v25 = createVideo("025.mp4");
   v25.size(width/3, height/3);
   v26 = createVideo("026.mp4");
+  v26.size(width/2, height/2);
   v27 = createVideo("027.mp4");
   v27.size(width/3, height/3);
   v68 = createVideo("068.mp4");
@@ -76,9 +75,9 @@ v1.volume(0.2);
   v105 = createVideo("105.mp4");
   v105.size(width/13, height/3);
   v106 = createVideo("106.mp4");
-  v106.size(width/3, height/13);
+  v106.size(width/3, height/7);
   v107 = createVideo("107.mp4");
-  v107.size(width/13, height/3);
+  v107.size(width/7, height/3);
   
   noStroke();
   
@@ -93,7 +92,7 @@ v1.volume(0.2);
     const words = paragraph.split(' ');
     for (let j = 0; j < words.length; j++) {
       const spannedWord = createSpan(words[j]);
-      const dw = new DanceSpan(spannedWord, random(windowWidth), random(4600));
+      const dw = new DanceSpan(spannedWord, random(windowWidth), random(4700));
       dancingWords.push(dw);
   
     }
@@ -150,7 +149,7 @@ function draw() {
     v92.size(width/0.5, height/0.5);
     
   }
-if (frameCount % 1600 == 0) {
+if (frameCount % 1500 == 0) {
   v91.hide();
   v92.hide();
   v70.hide();
@@ -161,7 +160,7 @@ if (frameCount % 1600 == 0) {
   v92.volume(0);
   
 }
-  if (frameCount % 2100 == 0) {
+  if (frameCount % 1700 == 0) {
     
     v97.loop();
     v97.size(width/0.5, height/0.5);
@@ -169,7 +168,7 @@ if (frameCount % 1600 == 0) {
     v20.loop();
     v20.size(width, height);
 }
-  if (frameCount % 2500 == 0) {
+  if (frameCount % 2100 == 0) {
     v97.hide();
     v29.size(width, height);
     v29.loop();
@@ -182,10 +181,11 @@ if (frameCount % 1600 == 0) {
     v95.size(width/3, height/3);
     
 }
-  if (frameCount % 2700 == 0) {
+  if (frameCount % 2400 == 0) {
     v20.hide();
     v29.hide();
     v26.loop();
+    v26.size(width/0.5, height/0.5);
     v27.loop();
     v27.size(width/0.5, height/0.5);
     v13.hide();
@@ -193,7 +193,7 @@ if (frameCount % 1600 == 0) {
     v29.volume(0);
     v78 = createVideo("078.mp4");
 }
-  if (frameCount % 3200 == 0) {
+  if (frameCount % 2800 == 0) {
     
     v68.loop();
     v25.hide();
@@ -205,35 +205,40 @@ if (frameCount % 1600 == 0) {
     v96 = createVideo("096.mp4");
     v96.size(width/3, height/3);
 }
-  if (frameCount % 3700 == 0) {
+  if (frameCount % 3300 == 0) {
     v26.hide();
     v27.hide();
     v69.loop();
-    v69.size(width, height)
+    v69.size(width, height);
     v67.loop();
-    v67.size(width, height)
+    v67.size(width, height);
     v66.loop();
-    v66.size(width, height)
+    v66.size(width, height);
     v68.loop();
     v68.size(width/0.5, height/0.5);
+    v94.loop();
+    v94.size(width, height);
     v74 = createVideo("074.mp4");
 }
-  if (frameCount % 4100 == 0) {
+  if (frameCount % 3600 == 0) {
     v67.hide();
-    v66.hide();
     v68.hide();
     v74.loop();
     v78.loop();
     v66.volume(0);
     v75 = createVideo("075.mp4");
-    v86 = createVideo("086.mp4");
+    v75.size(width/4, height/4);    
     v87 = createVideo("087.mp4");
+    v87.size(width/4, height/4);
     v79 = createVideo("079.mp4");
+    v79.size(width/4, height/4);
     v69.volume(0.1);
 }
-  if (frameCount % 4400 == 0) {
+  if (frameCount % 3900 == 0) {
     v69.hide();
+    v66.hide();
     v75.loop();
+    v75.size(width/2, height/2);
     v68.volume(0);
     v67.volume(0);
     v76 = createVideo("076.mp4");
@@ -242,45 +247,46 @@ if (frameCount % 1600 == 0) {
     v101.size(width/0.5, height/0.5);
     v107.loop();
     v107.size(width, height);
+    
 }
   
-  if (frameCount % 4700 == 0) {
-   v78.hide();
-    v74.hide();
-    v76.loop();
-    v76.size(width/2, height/2);
-    v75.hide();
-    v86.loop();
-    v87.loop();
-    v79.loop();
-    v79.size(width, height);
+  if (frameCount % 4200 == 0) {
+
     v74.volume(0);
     v75.volume(0);
+    v78.hide();
+    v74.hide();
+    v75.hide();
+    v76.loop();
+    v76.size(width/2, height/2);
+    v101.hide();
+    v87.loop();
+    v87.size(width/2, height/2);
+    v79.loop();
+    v79.size(width, height);
     v105.loop();
     v105.size(width/0.5, height/0.5);
     v94 = createVideo("094.mp4");
-    
-}
-  if (frameCount % 5000 == 0) {
-    v76.hide();
-    v76.volume(0);
-    v101.hide();
-    v101.volume(0);
     v77.loop();
     v77.size(width, height);
-    v86.hide();
+    
+}
+  if (frameCount % 4700 == 0) {
+    v79.hide();
+    v76.hide();
+    v76.volume(0);
+    v77.hide();
+    v77.volume(0);
+    v101.hide();
+    v101.volume(0);
     v87.hide();
     v87.volume(0);
-    v86.volume(0);
-    v76.volume(0);
     v106.loop();
     v106.size(width, height);
     v105.hide();  
 }
-  if (frameCount % 5200 == 0) {
+  if (frameCount % 5000 == 0) {
    v106.hide();
-    v77.hide();
-    v77.volume(0);
     v94.loop();
     v94.size(width, height);
     v95.loop();
@@ -294,6 +300,5 @@ if (frameCount % 1600 == 0) {
     v94.volume(0);
     v95.volume(0);
 
-    
   }
 }  
