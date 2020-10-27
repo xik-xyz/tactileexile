@@ -63,7 +63,6 @@ v1.volume(0.2);
   v67.size(width/3, height/3);
   v77 = createVideo("077.mp4");
   v77.size(width/4, height/4);
-  v97 = createVideo("97.mp4");
   v101 = createVideo("101.mp4");
   v101.size(width/3, height/13);
   v105 = createVideo("105.mp4");
