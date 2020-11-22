@@ -85,7 +85,7 @@ v1.volume(0.2);
     const words = paragraph.split(' ');
     for (let j = 0; j < words.length; j++) {
       const spannedWord = createSpan(words[j]);
-      const dw = new DanceSpan(spannedWord, random(windowWidth), random(4700));
+      const dw = new DanceSpan(spannedWord, random(windowWidth), random(6000));
       dancingWords.push(dw);
   
     }
